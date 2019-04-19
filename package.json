@@ -1,0 +1,25 @@
+{
+  "name": "scrollclass",
+  "version": "0.0.0",
+  "description": "Add/remove classes to elements as the user scrolls with IntersectionObserver",
+  "main": "scrollclass.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/190n/scrollclass.git"
+  },
+  "keywords": [
+    "scroll",
+    "animation",
+    "IntersectionObserver",
+    "class"
+  ],
+  "author": "190n",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/190n/scrollclass/issues"
+  },
+  "homepage": "https://github.com/190n/scrollclass#readme"
+}
