@@ -1,6 +1,6 @@
 {
   "name": "scrollclass",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Add/remove classes to elements as the user scrolls with IntersectionObserver",
   "main": "scrollclass.js",
   "scripts": {
