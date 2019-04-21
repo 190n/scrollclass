@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Scrollclass test</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main id="fakeViewport">
+            <div id="container">
+                <div id="targets">
+                    <div class="target" id="target1" style="margin-top: 100px;">
+                        I turn navy when Trigger 1 is 100% visible
+                    </div>
+                    <div class="target" id="target2">
+                        I am invisible when Trigger 2 is less than 50% visible
+                    </div>
+
+                    <div class="target" id="target3">
+                        I am blue if Trigger 3 is visible and green otherwise
+                    </div>
+                    <div class="target" id="target4">
+                        I slide in from the left as soon as Trigger 4 is visible
+                        by more than 50px
+                    </div>
+                </div>
+                <div id="triggers">
+                    <div class="trigger" id="trigger1">
+                        Trigger 1
+                    </div>
+                    <div class="trigger" id="trigger2">
+                        Trigger 2
+                    </div>
+                    <div class="trigger" id="trigger3">
+                        Trigger 3
+                    </div>
+                    <div class="trigger" id="trigger4" style="margin-top: 600px;">
+                        Trigger 4
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <p id="fvpCaption">
+            Fake viewport used for visibility calculations<br>
+            Try scrolling up and down
+        </p>
+
+        <div id="fakeTriggers">
+        </div>
+        
+        <script src="bundle.js"></script>
+    </body>
+</html>

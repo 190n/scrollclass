@@ -1,0 +1,135 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+#fakeViewport {
+    box-sizing: border-box;
+    border: thin solid gray;
+    width: 640px;
+    height: 50%;
+    position: fixed;
+    left: 50%;
+    top: 100px;
+    margin-left: -320px;
+    overflow-x: hidden;
+    background-color: white;
+    z-index: 1000;
+    scrollbar-width: none;
+}
+
+#fvpCaption {
+    position: absolute;
+    width: 350px;
+    text-align: center;
+    left: 50%;
+    margin-left: -175px;
+    top: 50%;
+    margin-top: 108px;
+}
+
+#container {
+    position:static;
+    width: 100%;
+    padding: 16px;
+}
+
+@media (max-width: 656px) {
+    #fakeViewport {
+        width: calc(100% - 16px);
+        left: 0;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    #fakeTriggers {
+        width: calc(50% - 32.5px) !important;
+    }
+
+    #targets {
+        width: calc(50% - 32px) !important;
+    }
+}
+
+.target, .trigger {
+    border: thin solid black;
+    border-radius: 16px;
+    padding: 8px;
+    text-align: center;
+    transition: 0.2s border-color, 0.2s background-color, 0.2s color, 0.2s opacity, 0.2s right;
+    margin: 0 0 16px 0;
+}
+
+.trigger {
+    background-color: lightblue;
+}
+
+#target1.active {
+    border-color: navy;
+    background-color: navy;
+    color: white;
+}
+
+#target2 {
+    opacity: 0;
+}
+
+#target2.active {
+    opacity: 1;
+}
+
+#target3.blue {
+    background-color: blue;
+    border-color: blue;
+    color: white;
+}
+
+#target3.green {
+    background-color: green;
+    border-color: green;
+    color: white;
+}
+
+#target4 {
+    opacity: 0;
+    position: relative;
+    right: 50px;
+}
+
+#target4.active {
+    opacity: 1;
+    right: 0;
+}
+
+#targets, #triggers {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#targets {
+    margin-right: 8px;
+    position: fixed;
+    top: 16px;
+    width: 296px;
+}
+
+#triggers {
+    margin-left: calc(50% - 4px);
+    width: calc(50% - 24px);
+}
+
+#fakeTriggers {
+    position: absolute;
+    width: 294.5px;
+    left: 50%;
+    top: 0;
+    margin-left: 12px;
+    margin-top: 117px;
+}
+
+::-webkit-scrollbar {
+    width: 0 !important;
+}
