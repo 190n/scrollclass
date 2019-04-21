@@ -39,8 +39,8 @@ const scrollclass = require('scrollclass');
 Usage
 -----
 
-See [test.html](https://github.com/190n/scrollclass/blob/master/test.html) for a
-complete example.
+See [example/index.html](https://github.com/190n/scrollclass/blob/master/example/index.html)
+for a complete example.
 
 ```js
 

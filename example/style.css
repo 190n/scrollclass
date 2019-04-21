@@ -14,7 +14,7 @@ body {
     top: 100px;
     margin-left: -320px;
     overflow-x: hidden;
-    background-color: white;
+    background-image: linear-gradient(to top, rgba(255, 0, 0, 0.1) 50px, white 50px);
     z-index: 1000;
     scrollbar-width: none;
 }
@@ -92,7 +92,7 @@ body {
 }
 
 #target4 {
-    opacity: 0;
+    opacity: 0.3;
     position: relative;
     right: 50px;
 }
