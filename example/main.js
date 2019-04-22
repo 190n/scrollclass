@@ -1,34 +1,34 @@
 // import with ES6 syntax
-import scrollclass from 'scrollclass';
+import scrollclass from '../scrollclass';
 
 scrollclass([
     {
-        target: document.getElementById('target1'),
-        trigger: document.getElementById('trigger1'),
+        target: 'target1',
+        trigger: 'trigger1',
         class: 'active',
         threshold: 1,
-        root: document.getElementById('fakeViewport')
+        root: 'fakeViewport'
     },
     {
-        target: document.getElementById('target2'),
-        trigger: document.getElementById('trigger2'),
+        target: 'target2',
+        trigger: 'trigger2',
         class: 'active',
         threshold: 0.5,
-        root: document.getElementById('fakeViewport')
+        root: 'fakeViewport'
     },
     {
-        target: document.getElementById('target3'),
-        trigger: document.getElementById('trigger3'),
+        target: 'target3',
+        trigger: 'trigger3',
         class: 'blue',
         alternateClass: 'green',
-        root: document.getElementById('fakeViewport')
+        root: 'fakeViewport',
     },
     {
-        target: document.getElementById('target4'),
-        trigger: document.getElementById('trigger4'),
+        target: 'target4',
+        trigger: 'trigger4',
         class: 'active',
         once: true,
-        root: document.getElementById('fakeViewport'),
+        root: 'fakeViewport',
         // margin expands the bounding box of the viewport.
         // Here, a margin of -50px shrinks the bounding box so that the trigger
         // element must be 50px past the boundary before the class will be added

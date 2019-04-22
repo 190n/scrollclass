@@ -48,7 +48,9 @@ for a complete example.
 let sc = scrollclass([
     {
         // element to apply the class to
-        target: document.getElementById('target'),
+        // for all options that accept elements, you can give a string of the
+        // element's ID or an actual Element object
+        target: 'target',
         // which class to add or remove
         class: 'active',
         // it will have the class when at least 75% of the trigger element is visible
@@ -56,7 +58,7 @@ let sc = scrollclass([
         threshold: 0.75,
         // which element to check visibility of
         // if not specified, the target element is used
-        trigger: document.getElementById('trigger'),
+        trigger: 'trigger',
         // once = true: once the target element is first given the class, it will never be removed
         // once = false (default): the class will be removed when the condition is no longer met
         once: false,
@@ -73,7 +75,7 @@ let sc = scrollclass([
         // root element that visibility is computed relative to
         // must be an ancestor of the trigger element
         // default: browser viewport
-        root: document.getElementById('rootElem')
+        root: 'rootElem'
     } // can specify as many more as you want, or make multiple calls to scrollclass
 ]);
 

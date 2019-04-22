@@ -12,6 +12,18 @@ function scrollclass(triggers) {
             margin = t.hasOwnProperty('margin') ? t.margin : '0px',
             root = t.hasOwnProperty('root') ? t.root : null;
 
+        if (typeof target == 'string') {
+            target = document.getElementById(target);
+        }
+
+        if (typeof trigger == 'string') {
+            trigger = document.getElementById(trigger);
+        }
+
+        if (typeof root == 'string') {
+            root = document.getElementById(root);
+        }
+
         let options = {
             root,
             threshold,
