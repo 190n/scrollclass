@@ -39,7 +39,7 @@ const scrollclass = require('scrollclass');
 Usage
 -----
 
-See [example/index.html](https://github.com/190n/scrollclass/blob/master/example/index.html)
+See [here](https://190n.github.io/scrollclass/example/example.html)
 for a complete example.
 
 ```js
@@ -66,7 +66,7 @@ let sc = scrollclass([
         // inverts all operations
         // default: false
         invert: false,
-        // margin to add around the trigger element's bounding box
+        // margin to add around the viewport's bounding box
         // specified the same way as the CSS margin property (top right bottom left)
         // default: '0px'
         margin: '20px',
